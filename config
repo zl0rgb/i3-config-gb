@@ -23,7 +23,7 @@ font pango:Terminess Nerd Font Medium Regular 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec_always dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
-exec_always --no-startup-id /home/yurp/.screenlayout/a.sh
+exec_always --no-startup-id .screenlayout/a.sh
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id feh --bg-fill 1.png
 exec_always --no-startup-id picom
